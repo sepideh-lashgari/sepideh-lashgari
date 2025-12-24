@@ -1,4 +1,7 @@
-![Profile Banner](./readme.png)
+<p align="center">
+  <img src="./readme.png"  width= 100% height= 80%/>
+</p>
+
 
 ## Hi there 👋
 I’m constantly learning new technologies and enjoy solving challenging problems. If you’re interested in collaborating on new projects, feel free to reach me out on Linkdin.🌱🤓
