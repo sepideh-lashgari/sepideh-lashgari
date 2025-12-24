@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./readme.png"  width= 100% height= 80%/>
+  <img src="./edited version.png"  width= 100%>
 </p>
 
 
