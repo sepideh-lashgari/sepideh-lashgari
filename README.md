@@ -1,3 +1,5 @@
+![Profile Banner](./readme.png)
+
 ## Hi there 👋
 I’m constantly learning new technologies and enjoy solving challenging problems. If you’re interested in collaborating on new projects, feel free to reach me out on Linkdin.🌱🤓
 
