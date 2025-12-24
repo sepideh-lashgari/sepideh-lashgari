@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./edited version.png"  width= 100%>
+  <img src="./cc.png"  width= 1400px height=425px >
 </p>
 
 
