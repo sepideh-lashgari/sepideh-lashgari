@@ -1,120 +1,71 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import React from 'react'
 import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="app">
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+      <nav className="navbar">
+        <span className="logo"><span className="logo-bold">S</span>epideh.</span>
+        <div className="nav-links">
+          <a href="#">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+      </nav>
+
+      <section className="hero">
+        <h1>Full-Stack Developer<br/>& Security Enthusiast</h1>
+        <p>I build modern web apps with clean code and a security-first mindset.</p>
+        <div className="hero-buttons">
+          <a href="#projects" className="btn-primary">View Projects</a>
+          <a href="#contact" className="btn-outline">Contact Me</a>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <section className="projects" id="projects">
+        <h2>Projects</h2>
+        <div className="projects-grid">
+          <div className="project-card">
+            <h3>🔐 Password Manager</h3>
+            <p>Secure web app with encryption and user authentication.</p>
+            <div className="tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+          <div className="project-card">
+            <h3>📊 Finance Tracker</h3>
+            <p>Personal budget tracker with charts and monthly reports.</p>
+            <div className="tags">
+              <span>React</span>
+              <span>PostgreSQL</span>
+              <span>REST API</span>
+            </div>
+          </div>
+          <div className="project-card">
+            <h3>🛡️ Auth System</h3>
+            <p>Authentication with JWT, bcrypt hashing and role-based access.</p>
+            <div className="tags">
+              <span>Node.js</span>
+              <span>JWT</span>
+              <span>Security</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <p>Open to work — let's connect!</p>
+        <div className="contact-links">
+          <a href="https://github.com/sepideh-lashgari">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Email</a>
+        </div>
+      </section>
+
+    </div>
   )
 }
 
