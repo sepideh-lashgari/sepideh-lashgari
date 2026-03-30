@@ -1,3 +1,4 @@
+![Hi I'm Sepi](./GitHub_Banner.svg)
 # Hi, I'm Sepideh 👋
 
 **AI Full-Stack Web Developer** | Cybersecurity Enthusiast
